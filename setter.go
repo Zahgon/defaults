@@ -5,8 +5,4 @@ type Setter interface {
 	SetDefaults()
 }
 
-func callSetter(v interface{}) {
-	if ds, ok := v.(Setter); ok {
-		ds.SetDefaults()
-	}
-}
+func callSetter(v interface{}) { _ = "STUB: not implemented"; return }

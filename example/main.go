@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"math/rand"
 
 	"github.com/creasty/defaults"
 )
@@ -40,11 +39,10 @@ type OtherStruct struct {
 }
 
 // SetDefaults implements defaults.Setter interface
-func (s *OtherStruct) SetDefaults() {
-	if defaults.CanUpdate(s.Random) { // Check if it's a zero value (recommended)
-		s.Random = rand.Int() // Set a dynamic value
-	}
-}
+func (s *OtherStruct) SetDefaults() { _ = "STUB: not implemented"; return }
+
+// Check if it's a zero value (recommended)
+// Set a dynamic value
 
 func main() {
 	obj := &Sample{}
